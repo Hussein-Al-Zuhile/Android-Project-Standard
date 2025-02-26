@@ -1,0 +1,3 @@
+package com.hussein.androidprojectstandard.presentation.base
+
+interface StateEvent
