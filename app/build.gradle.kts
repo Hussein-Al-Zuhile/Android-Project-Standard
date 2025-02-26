@@ -26,7 +26,7 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "EXAMPLE_API_BASE_URL", "\"http://192.168.20.188:8080/\"")
+            buildConfigField("String", "EXAMPLE_API_BASE_URL", "\"https://example.com/\"")
             buildConfigField("String", "EXAMPLE_MQTT_IP", "\"192.168.1.1\"")
             buildConfigField("Integer", "EXAMPLE_MQTT_PORT", "1883")
         }
