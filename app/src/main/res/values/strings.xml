@@ -11,5 +11,12 @@
     <string name="message_mqtt_subscription_failed">Subscription failed. Please try again.</string>
     <string name="message_mqtt_unsubscribe_failed">Unsubscribe failed. Please try again.</string>
     <string name="message_mqtt_publishing_failed">Publishing failed. Please try again.</string>
+    <string name="sign_in_here">Sign In Here</string>
+    <string name="text_please_enter_your_email_and_password">Please enter your Email and Password</string>
+    <string name="label_password">Password</string>
+    <string name="label_for_changing_language_click_here">من أجل اللغة العربية إضغط هنا</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_username_or_email">Username Or Email.</string>
+    <string name="label_logout">Logout</string>
 
 </resources>

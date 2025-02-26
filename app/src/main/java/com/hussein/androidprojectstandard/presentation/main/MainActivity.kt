@@ -1,10 +1,6 @@
 package com.hussein.androidprojectstandard.presentation.main
 
-import android.app.PendingIntent
-import android.content.Intent
-import android.nfc.NfcAdapter
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,8 +13,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHostState
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
@@ -26,17 +20,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.launch
-import org.koin.androidx.compose.koinViewModel
-import org.koin.compose.KoinContext
-
 import com.hussein.androidprojectstandard.presentation.base.MessageSnackbar
-import com.hussein.androidprojectstandard.utils.UIText
 import com.hussein.androidprojectstandard.presentation.theme.AppTheme
 import com.hussein.androidprojectstandard.utils.ConsumeEach
+import com.hussein.androidprojectstandard.utils.UIText
+import kotlinx.coroutines.channels.Channel
+import org.koin.compose.KoinContext
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 val LocalSharedTransitionScope = compositionLocalOf<SharedTransitionScope?> { null }
@@ -74,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                                     MessageSnackbar(snackbarHostState, message = messageState)
                                 }
                             ) { innerPadding ->
-
+                                MainNavHost(Modifier.padding(innerPadding))
                             }
                         }
                     }

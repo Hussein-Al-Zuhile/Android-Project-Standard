@@ -1,6 +1,7 @@
 package com.hussein.androidprojectstandard.data.datasource.remote.http
 
 import android.util.Log
+import com.hussein.androidprojectstandard.BuildConfig
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.android.Android
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -18,6 +19,8 @@ import kotlinx.serialization.json.Json
 val ExampleHttpClient = HttpClient(Android) {
     // This will throw exception if response status is not 2xx
     expectSuccess = true
+
+    developmentMode = BuildConfig.DEBUG
 
     install(Resources)
 
@@ -38,7 +41,7 @@ val ExampleHttpClient = HttpClient(Android) {
     }
 
     defaultRequest {
-        url("${BuildConfig.EXAMPLE_API_BASE_URL}api/")
+        url("${BuildConfig.EXAMPLE_API_BASE_URL}/api/")
         header(HttpHeaders.ContentType, ContentType.Application.Json)
     }
 

@@ -19,7 +19,7 @@ object DataStoreManager {
     val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
 
-    val Context.examplePreference: JsonPreferenceWrapper<String>
+    val Context.tokenPreference: JsonPreferenceWrapper<String>
         get() = JsonPreferenceWrapper(
             stringPreferencesKey("example"),
             dataStore,
@@ -48,7 +48,7 @@ open class PreferenceWrapper<T>(
         }
     }
 
-    suspend fun removePreference() = runBlocking {
+    fun removePreference() = runBlocking {
         dataStore.edit {
             it.remove(preferenceKey)
         }

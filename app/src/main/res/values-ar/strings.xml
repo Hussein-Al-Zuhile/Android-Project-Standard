@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_generic_error">حدث خطأ ما. يرجى المحاولة مرة أخرى.</string>
+    <string name="message_no_internet">لا يوجد اتصال بالإنترنت. يرجى التحقق من إعدادات الشبكة.</string>
+    <string name="message_server_error">حدث خطأ في الخادم. يرجى المحاولة لاحقًا.</string>
+    <string name="message_bad_request">طلب غير صالح. يرجى التحقق من الإدخال والمحاولة مرة أخرى.</string>
+    <string name="message_unauthorized">غير مصرح لك. يرجى تسجيل الدخول والمحاولة مرة أخرى.</string>
+    <string name="message_mqtt_connection_failed">فشل الاتصال. يرجى المحاولة مرة أخرى.</string>
+    <string name="message_mqtt_disconnection_failed">فشل قطع الاتصال. يرجى المحاولة مرة أخرى.</string>
+    <string name="message_mqtt_subscription_failed">فشل الاشتراك. يرجى المحاولة مرة أخرى.</string>
+    <string name="message_mqtt_unsubscribe_failed">فشل إلغاء الاشتراك. يرجى المحاولة مرة أخرى.</string>
+    <string name="message_mqtt_publishing_failed">فشل النشر. يرجى المحاولة مرة أخرى.</string>
+    <string name="sign_in_here">تسجيل الدخول هنا</string>
+    <string name="text_please_enter_your_email_and_password">يرجى إدخال البريد الإلكتروني وكلمة المرور</string>
+    <string name="label_password">كلمة المرور</string>
+    <string name="label_for_changing_language_click_here">For English, click here</string>
+    <string name="label_sign_in">تسجيل الدخول</string>
+    <string name="label_username_or_email">اسم المستخدم أو البريد الإلكتروني</string>
+    <string name="label_logout">تسجيل الخروج</string>
+
+</resources>
